@@ -1,0 +1,25 @@
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+body {
+  font-family: "Odibee Sans"
+}
+
+.banner {
+  display: grid;
+  height: 200px;
+  font-family: "Odibee sans";
+  color: white;
+  font-size: 30px;
+  background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}

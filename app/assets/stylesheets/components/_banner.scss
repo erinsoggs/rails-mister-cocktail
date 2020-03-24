@@ -12,14 +12,14 @@
 // }
 
 body {
-  font-family: "Odibee Sans"
+  font-family: "$body-font"
 }
 
 .banner {
   display: grid;
   height: 200px;
-  font-family: "Odibee sans";
+  font-family: "$headers-font";
   color: white;
   font-size: 30px;
-  background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-color: #bd7dd1;
 }

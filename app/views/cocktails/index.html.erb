@@ -1,14 +1,17 @@
-
 <div class="banner">
     <h1>My Cocktail List</h1>
-      <p><%= link_to "Add A New Cocktail", new_cocktail_path %></p>
+      <p><%= link_to "Add A New Cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
 </div>
 
-<ul>
+<div class="cocktail-container">
+<div class= "cocktail-grid">
   <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
   <% end %>
-</ul>
+</div>
+</div>
 
 
 

@@ -20,6 +20,6 @@ hash["drinks"].each do |x|
   Ingredient.create(name: x["strIngredient1"])
 end
 
-5.times do
+6.times do
   Cocktail.create(name: Faker::FunnyName.name)
 end

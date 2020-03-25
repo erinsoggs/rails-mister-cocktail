@@ -1,7 +1,7 @@
-<div class="banner">
-    <h1>Cocktails by Faker</h1>
-      <p><%= link_to "Add A New Cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
-</div>
+  <div class="banner">
+      <h1>Cocktails by Faker</h1>
+        <p><%= link_to "Add A New Cocktail", new_cocktail_path, class: "btn" %></p>
+  </div>
 
 <div class="cocktail-banner">
   <img src="https://images.unsplash.com/photo-1583743946281-20e633533a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="Picture of three cocktails">
@@ -11,7 +11,7 @@
 <div class="cocktail-container">
   <div class= "cocktail-grid">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1531002329786-97e3efcb754b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
       </div>
     <% end %>

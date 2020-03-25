@@ -1,3 +1,13 @@
 .cocktail-container {
   padding: 30px;
 }
+
+.banner-container {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 20px;
+}
+

@@ -11,5 +11,16 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  font-family: $headers-font
+  font-family: $body-font
 }
+
+.card-category a {
+  color: white;
+  font-weight: 600;
+}
+
+.card-category a:hover {
+      color: #32AE4B;
+      text-decoration: none;
+}
+

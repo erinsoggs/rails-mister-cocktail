@@ -1,23 +1,26 @@
 <div class="banner">
-    <h1>My Cocktail List</h1>
+    <h1>Cocktails by Faker</h1>
       <p><%= link_to "Add A New Cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
 </div>
 
+
 <div class="cocktail-container">
-<div class= "cocktail-grid">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1556139943-4bdca53adf1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
-    </div>
-  <% end %>
+  <div class= "cocktail-grid">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+    <% end %>
+  </div>
 </div>
-</div>
+
 
 <div class="footer">
   <div class="footer-copyright">
     This footer is made with <i class="fas fa-heart"></i> at Le Wagon
   </div>
 </div>
+
 
 
 

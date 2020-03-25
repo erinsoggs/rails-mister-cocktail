@@ -1,15 +1,15 @@
 .footer {
-  background: #bd7dd1;
+  background: #050859;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: white;
   bottom: 0px;
   position: absolute;
   width: 100%;
-
+  font-family: $headers-font;
 }
 
 .footer .fa-heart {

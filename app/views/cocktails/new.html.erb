@@ -1,6 +1,14 @@
+<%= render 'shared/faker_banner' %>
+
+<div class="cocktail-banner">
+  <img src="https://images.unsplash.com/photo-1583743946281-20e633533a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="Picture of three cocktails">
+</div>
+
 <h1><%= @cocktail.name %></h1>
 
 <%= simple_form_for([@cocktail]) do |f| %>
   <%= f.input :name %>
   <%= f.submit %>
 <% end %>
+
+<%= render 'shared/footer' %>

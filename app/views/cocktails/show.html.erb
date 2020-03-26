@@ -1,6 +1,11 @@
-<h1><%= @cocktail.name %></h1>
+<%= render 'shared/faker_banner' %>
 
-<%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
+<div class="cocktail-banner">
+  <img src="https://images.unsplash.com/photo-1583743946281-20e633533a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="Picture of three cocktails">
+</div>
+
+  <h1><%= @cocktail.name %></h1>
+  <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
 
 
 <%#= render "doses/new", cocktail: @cocktail, dose: @dose %>
@@ -10,4 +15,6 @@
   <p><%= dose.description %></p>
   <%= link_to "Delete", dose_path(dose), method: :delete %>
  <% end %>
+
+<%= render 'shared/faker_banner' %>
 

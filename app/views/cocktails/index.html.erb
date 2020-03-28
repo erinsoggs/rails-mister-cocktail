@@ -7,14 +7,25 @@
 </div>
 
 <div class="cocktail-container">
-  <p>To get mixing, select a cocktail below, or search by keyword: </p>
-  <div class= "cocktail-grid">
-    <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1531002329786-97e3efcb754b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  <div class="search-bar d-flex align-items-start">
+    <p>Let's get mixing! Select a cocktail below, or search by cocktail name:</p>
+    <%= simple_form_for :search, url: cocktails_path, method: :get do |f| %>
+      <div class="search-form-control form-group">
+        <input class="form-control string required" type="text" name="search" id="search_query" style="height: 2.0rem" />
+        <button name="button" type="submit" class="btn btn-flat">
+          <i class="fas fa-search"></i> Search
+        </button>
       </div>
     <% end %>
   </div>
+
+<div class= "cocktail-grid">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1531002329786-97e3efcb754b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+   <% end %>
+</div>
 </div>
 
 <div class="footer footer-sticky">

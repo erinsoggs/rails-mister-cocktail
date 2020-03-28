@@ -1,6 +1,9 @@
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all
+    @search = params[:search]
+    return @cocktails = Cocktail.search_by_name(@search) if @search
+    return @cocktails if @search != @cocktail
   end
 
   def new

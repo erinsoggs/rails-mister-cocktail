@@ -4,9 +4,11 @@
 
 .search-form-control .btn {
   position: absolute;
-  top: 8px;
-  bottom: 8px;
-  right: 8px;
+  // top: -10rem;
+  bottom: -0.1rem;
+  right: -5.75rem;
+  border: none;
+  color: #32AE4B;
 }
 
 .search-form-control .form-control {
@@ -16,8 +18,17 @@
 }
 
 .search-form-control .form-control:focus {
-  border: 1px solid #1EDD88;
+  border: 1px solid #32AE4B;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
+.no-match-search {
+  text-align: center;
+  font-family: $body-font;
+}
+
+.form-control {
+  width: 140%;
+  margin-left: 10px;
+}

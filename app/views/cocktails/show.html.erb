@@ -4,8 +4,24 @@
   <img src="https://images.unsplash.com/photo-1583743946281-20e633533a2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="Picture of three cocktails">
 </div> -->
 
-  <h1><%= @cocktail.name %></h1>
-  <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %>
+
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h1><%= @cocktail.name %></h1>
+    <p><%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %></p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+ <!--  <h1><%= @cocktail.name %></h1>
+  <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %> -->
 
 
 <%#= render "doses/new", cocktail: @cocktail, dose: @dose %>

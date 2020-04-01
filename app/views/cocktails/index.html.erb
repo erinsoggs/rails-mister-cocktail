@@ -11,13 +11,15 @@
     <p>Let's get mixing! Select a cocktail below, or search by cocktail name:</p>
     <%= simple_form_for :search, url: cocktails_path, method: :get do |f| %>
       <div class="search-form-control form-group">
-        <input class="form-control string required" type="text" name="search" id="search_query" style="height: 2.0rem" />
+        <input class="form-control string required" type="text" name="search" id="search_query" placeholder="ex: Midas Well" style="height: 2.0rem" />
         <button name="button" type="submit" class="btn btn-flat">
           <i class="fas fa-search"></i> Search
         </button>
       </div>
     <% end %>
   </div>
+
+<%= render 'shared/no_match' %>
 
 <div class= "cocktail-grid">
   <% @cocktails.each do |cocktail| %>

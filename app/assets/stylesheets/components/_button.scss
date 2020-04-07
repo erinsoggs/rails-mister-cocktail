@@ -6,7 +6,7 @@
   left: auto;
 }
 
-.btn:hover {
+.btn:hover{
   color: #32AE4B;
 }
 
@@ -18,4 +18,10 @@
   color: #D01522;
   left: auto;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-add-ingredient a:hover {
+  color: #32AE4B;
 }

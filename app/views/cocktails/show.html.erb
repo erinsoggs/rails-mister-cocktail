@@ -8,17 +8,27 @@
 <div class="card-product">
   <img src="https://images.unsplash.com/photo-1549746423-e5fe9cafded8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
   <div class="card-product-infos">
-    <h1><%= @cocktail.name %></h1>
-    <p class="btn-add-ingredient"><%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %></p>
-      <% @cocktail.doses.each do |dose| %>
-        <p><%= dose.ingredient.name %></p>
-        <p><%= dose.description %></p>
-        <i class="far fa-trash-alt"><%= link_to "Delete", dose_path(dose), method: :delete %></i>
-  <% end %>
+    <div class="card-name-card-link">
+      <h1><%= @cocktail.name %></h1>
+      <p class="btn-add-ingredient"><%= link_to "Add An Ingredient", new_cocktail_dose_path(@cocktail) %></p>
+    </div>
+      <table>
+        <tr>
+         <th>Ingredient</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+
+        <% @cocktail.doses.each do |dose| %>
+          <tr>
+            <td><%= dose.ingredient.name %></td>
+            <td><%= dose.description %></td>
+            <td><i class="far fa-trash-alt"><%= link_to "Delete", dose_path(dose), method: :delete %></i></td>
+          </tr>
+        <% end %>
+      </table>
   </div>
 </div>
-
-
 
 
 

@@ -1,5 +1,4 @@
 .btn {
-  border: solid, 10px;
   border-color: white;
   text: white;
   font-family: $body-font;
@@ -9,4 +8,14 @@
 
 .btn:hover {
   color: #32AE4B;
+}
+
+.btn-add-ingredient a {
+  border: solid, 1px;
+  border-color: #D0152B;
+  text: white;
+  font-family: $body-font;
+  color: #D01522;
+  left: auto;
+  text-decoration: none;
 }

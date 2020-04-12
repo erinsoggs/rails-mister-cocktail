@@ -1,0 +1,12 @@
+.ingredient-table {
+  display: grid;
+  font-family: $body-font;
+    th {
+      padding-bottom: 2px;
+      border-bottom: double;
+    }
+      td {
+        padding-top: 10px;
+      }
+}
+
